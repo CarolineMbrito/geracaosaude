@@ -2,7 +2,7 @@ package com.geracaosaude.model;
 
 public class UsuarioLogin {
     private Long id;
-    private String name;
+    private String nome;
 
     private String usuario;
 
@@ -20,12 +20,12 @@ public class UsuarioLogin {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getUsuario() {
