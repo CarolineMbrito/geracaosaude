@@ -1,10 +1,13 @@
 package com.geracaosaude.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.v3.oas.annotations.media.Schema;
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
@@ -19,9 +22,12 @@ public class Usuario {
     @Size(min = 3 , max = 100 )
     private String nome;
 
-    @NotBlank(message = "O atributo Usuario é obrigatorio ")
     @Size(min = 2 , max = 100 )
+    @Schema(example = "email@email.com.br")
+    @NotNull(message = "O Atributo Usuário é Obrigatório!")
+    @Email(message = "O Atributo Usuário deve ser um email válido!")
     private String usuario;
+
 
     @NotBlank(message = "O atributo senha é obrigatorio ")
     @Size(min = 8 , message = "Senha deve ter no minimo 8 caracteres ")
