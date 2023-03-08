@@ -18,18 +18,18 @@ public class SwaggerConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("Projeto Geração Saúde")
-                .description("Projeto Blog Geração Saúde - Generation Brasil")
-                .version("v0.0.1")
+                        .description("Projeto Blog Geração Saúde - Generation Brasil")
+                        .version("v0.0.1")
                 .license(new License()
                         .name("Geração Saúde")
                         .url("https://github.com/geracaosaude/geracaosaude"))
-                                .contact(new Contact()
-                                        .name("Blog Geração Saúde")
-                                        .url("https://github.com/geracaosaude/geracaosaude")
-                                                .email("geracaosaude@email.com")))
-                                .externalDocs(new ExternalDocumentation()
-                                        .description("Github")
-                                        .url("https://github.com/geracaosaude/geracaosaude"));
+                .contact(new Contact()
+                        .name("Blog Geração Saúde")
+                        .url("https://github.com/geracaosaude/geracaosaude")
+                        .email("geracaosaude@email.com")))
+                .externalDocs(new ExternalDocumentation()
+                        .description("Github")
+                        .url("https://github.com/geracaosaude/geracaosaude"));
     }
 
     @Bean
