@@ -39,7 +39,7 @@ public class Postagem {
     private Tema tema;
 
     @ManyToOne
-    @JsonIgnoreProperties("postagem")
+    @JsonIgnoreProperties("postagens")
     private Usuario usuario;
     
     public Usuario getUsuario() {
